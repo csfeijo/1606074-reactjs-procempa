@@ -1,24 +1,26 @@
+import React, { useState } from 'react';
+import Button from './components/Button';
+import Titulo from './components/Titulo';
+
 function App() {
 
-  // const aula = <>
-  //   <h2>Aula - 01</h2>
-  //   <p>Olá!</p>
-  // </>
-
-  const aula = (num) => {
-    return (
-      <>
-        <h2>Aula - {num}</h2>
-        <p>Olá!</p>
-     </>
-    )
-  }
+  const [ count, setCount ] = useState(0);
 
   return (
     <>
-      <h1>Curso de ReactJS</h1>
-      <hr />
-      {aula(10)}
+      <Titulo aula='Aula 02' turma={count} />
+
+      <Button onClick={() => {
+        setCount(count + 1)
+      }}>Incrementa</Button>
+
+      <Button onClick={() => {
+        setCount(count - 1)
+      }}>Decrementa</Button>
+
+      <br/>
+      Count: {count}
+
     </>
   )
 }
