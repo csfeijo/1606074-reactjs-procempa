@@ -23,7 +23,23 @@
 - States
 - Envio de exercício
 
+### Aula 03 (25/10/2022)
+- Correção do exercício
+- useEffect
+- Estilos CSS no ReactJS
+- CSS
+- SASS Overview
+- Styled Components
 
 ## Links Uteis
-- [Repositório Turma Procempa 16062066](https://github.com/csfeijo/1606066-reactjs-procempa)
-- [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+* [Repositório Turma Procempa 16062066](https://github.com/csfeijo/1606066-reactjs-procempa)
+* [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+* [Figma](https://www.figma.com/)
+
+### Material CSS
+* [Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [Entendendo Básico de Diplay Flex - Vídeo](https://www.youtube.com/watch?v=fVNyfDUuock)
+* [Guia Completo FlexBox - Origamid](https://origamid.com/projetos/flexbox-guia-completo/)
+* [Game - FlexBox Frog](https://flexboxfroggy.com/#pt-br)
+* [Game - FlexBox Adventure](https://codingfantasy.com/games/flexboxadventure)
+* [SASS](https://sass-lang.com/)
