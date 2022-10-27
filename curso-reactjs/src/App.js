@@ -17,13 +17,24 @@ function App() {
       <Menu />
       <Titulo aula='Aula 02' turma={count} />
 
-      <Button onClick={() => {
-        setCount(count + 1)
-      }}>Incrementa</Button>
+      <Button 
+        onClick={() => {
+          setCount(count + 1)
+        }}
+        variant='success'
+      >
+        Incrementa
+      </Button>
 
-      <Button onClick={() => {
-        setCount(count - 1)
-      }}>Decrementa</Button>
+
+      <Button
+        onClick={() => {
+          setCount(count - 1)
+        }}
+        variant='danger'
+      >
+        Decrementa
+      </Button>
 
       <br/>
       Count: {count}
