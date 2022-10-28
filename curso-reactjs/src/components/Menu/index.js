@@ -7,15 +7,19 @@ import {
 const Menu = () => {
   return (
     <Nav>
-      <h1>Curso de ReactJS</h1>
       <LinkNav 
-        active={true}
-        href="#"
+        to="/"
+      >
+        <h1>Curso de ReactJS</h1>
+      </LinkNav>
+
+      <LinkNav
+        to="/departamentos"
       >
         Departamentos
       </LinkNav>
 
-      <LinkNav href="#">Add Departamentos</LinkNav>
+      <LinkNav to="/departamentos/new">Add Departamentos</LinkNav>
 
     </Nav>
   )

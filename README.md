@@ -31,6 +31,12 @@
 - SASS Overview
 - Styled Components
 
+### Aula 04 (27/10/2022)
+- Correção do exercício
+- ThemeProvider
+- Bate Papo sobre a Vercel
+- React Router 6.*
+
 ## Links Uteis
 * [Repositório Turma Procempa 16062066](https://github.com/csfeijo/1606066-reactjs-procempa)
 * [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
@@ -43,3 +49,11 @@
 * [Game - FlexBox Frog](https://flexboxfroggy.com/#pt-br)
 * [Game - FlexBox Adventure](https://codingfantasy.com/games/flexboxadventure)
 * [SASS](https://sass-lang.com/)
+
+### Design System
+* [Story Book](https://storybook.js.org/)
+
+### Developer Experience
+* [Vercel](https://vercel.com)
+* [NextJS](https://nextjs.org/)
+* [Vídeo NextJS Conf 2022](https://nextjs.org/conf)

@@ -29,6 +29,8 @@ const getVariant = (variant) => {
 
 
 const Container = styled.button`
+  padding: 10px;
+  border-radius: 4px;
   ${props => getVariant(props.variant)}
 `;
 

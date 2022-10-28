@@ -1,8 +1,11 @@
 import styled, { css } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Nav = styled.nav`
-  background: #002244;
-  color: white;
+
+  background: ${({ theme }) => theme.colors.background};
+
+  color: ${({ theme }) => theme.colors.mainColor};
 
   display: flex;
   align-items: stretch;
@@ -13,9 +16,8 @@ export const Nav = styled.nav`
   }
 `;
 
-export const LinkNav = styled.a`
-  /* background: ${props => props.active ? 'black' : 'transparent'}; */
-  color: white;
+export const LinkNav = styled(Link)`
+  color: ${({ theme }) => theme.colors.mainColor};
   font-size: 20px;
   padding: 0 40px;
   display: flex;
@@ -29,9 +31,6 @@ export const LinkNav = styled.a`
       background: black;
       color: #E89900;
   `}
-
-
-
 
   &:hover {
     text-decoration: underline;

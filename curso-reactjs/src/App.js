@@ -1,46 +1,38 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './assets/scss/main.scss';
-import Button from './components/Button';
-import Titulo from './components/Titulo';
+import { ThemeProvider } from 'styled-components';
+import { light, dark } from './Theme';
 import Menu from './components/Menu';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from 'react-router-dom';
+import Home from './pages/Home';
+import Departamentos from './pages/Departamentos';
 
 function App() {
-
-  const [ count, setCount ] = useState(0);
-
-  useEffect(() => {
-    console.log('State mudou...', count);
-  }, [count])
-
   return (
-    <>
-      <Menu />
-      <Titulo aula='Aula 02' turma={count} />
+    <ThemeProvider theme={dark}>
+      <BrowserRouter>
+      <Menu />  
+      <Routes>
+        <Route path='/'>
+          <Route index element={<Home/>} />
+          
+          <Route path='/departamentos'>
+            <Route index element={<Departamentos/>} />
+            <Route path='new' element={<h1>Add Departamento</h1>} />
+            <Route path=':idDepartamento' element={<h1>Detalha Departamento</h1>} />
+          </Route>
 
-      <Button 
-        onClick={() => {
-          setCount(count + 1)
-        }}
-        variant='success'
-      >
-        Incrementa
-      </Button>
-
-
-      <Button
-        onClick={() => {
-          setCount(count - 1)
-        }}
-        variant='danger'
-      >
-        Decrementa
-      </Button>
-
-      <br/>
-      Count: {count}
-
-    </>
+        </Route>
+        {/* Idealmente fica fora do escopo do / - no final das regras */}
+        <Route path='*' element={<h1>Not Found</h1>}/>
+      </Routes>      
+      </BrowserRouter>
+    </ThemeProvider>
   )
 }
 
-export default App
+export default App;
