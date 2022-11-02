@@ -10,26 +10,30 @@ import {
 } from 'react-router-dom';
 import Home from './pages/Home';
 import Departamentos from './pages/Departamentos';
+import FormDepartamento from './pages/FormDepartamento';
+import DetalheDepartamento from './pages/DetalheDepartamento';
 
 function App() {
   return (
     <ThemeProvider theme={dark}>
       <BrowserRouter>
       <Menu />  
-      <Routes>
-        <Route path='/'>
-          <Route index element={<Home/>} />
-          
-          <Route path='/departamentos'>
-            <Route index element={<Departamentos/>} />
-            <Route path='new' element={<h1>Add Departamento</h1>} />
-            <Route path=':idDepartamento' element={<h1>Detalha Departamento</h1>} />
-          </Route>
+      <section>
+        <Routes>
+          <Route path='/'>
+            <Route index element={<Home/>} />
+            
+            <Route path='/departamentos'>
+              <Route index element={<Departamentos/>} />
+              <Route path='new' element={<FormDepartamento/>} />
+              <Route path=':idDepartamento' element={<DetalheDepartamento/>} />
+            </Route>
 
-        </Route>
-        {/* Idealmente fica fora do escopo do / - no final das regras */}
-        <Route path='*' element={<h1>Not Found</h1>}/>
-      </Routes>      
+          </Route>
+          {/* Idealmente fica fora do escopo do / - no final das regras */}
+          <Route path='*' element={<h1>Not Found</h1>}/>
+        </Routes>
+      </section>    
       </BrowserRouter>
     </ThemeProvider>
   )

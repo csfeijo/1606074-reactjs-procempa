@@ -37,6 +37,11 @@
 - Bate Papo sobre a Vercel
 - React Router 6.*
 
+### Aula 05 (01/11/2022)
+- Correção do exercício
+- Finalização React Router 6.*
+- Axios - Parte 1
+
 ## Links Uteis
 * [Repositório Turma Procempa 16062066](https://github.com/csfeijo/1606066-reactjs-procempa)
 * [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
