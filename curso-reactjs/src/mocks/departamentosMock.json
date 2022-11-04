@@ -1,0 +1,12 @@
+[
+  {
+    "id_departamento": "8",
+    "sigla": "Fake D1",
+    "nome": "Fake DEPTO 1"
+  },
+  {
+    "id_departamento": "9",
+    "sigla": "Fake D2",
+    "nome": "Fake DEPTO 2"
+  }
+]
