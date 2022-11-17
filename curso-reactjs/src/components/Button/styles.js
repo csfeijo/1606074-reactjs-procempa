@@ -27,10 +27,16 @@ const getVariant = (variant) => {
   }
 }
 
-
 const Container = styled.button`
   padding: 10px;
   border-radius: 4px;
+  position: relative;
+
+  img {
+    width: 16px;
+    margin-right: 5px;
+  }
+  
   ${props => getVariant(props.variant)}
 `;
 

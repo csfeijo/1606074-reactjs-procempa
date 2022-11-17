@@ -6,6 +6,8 @@ const configureMock = (axios) => {
 
   mock.onGet('/departamentos/').reply(200, departamentosMock);
   //mock.onGet('/departamentos/').reply(500);
+
+  mock.onPost('/departamentos/').reply(200, { "msg" : "Value added" });
 }
 
 export default configureMock;

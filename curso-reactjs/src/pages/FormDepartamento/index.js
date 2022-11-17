@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import Button from '../../components/Button'
+import { useNavigate } from 'react-router-dom';
+import Button from '../../components/Button';
+import Loader from '../../components/Loader';
 import { Container, Mensagem } from './styles';
+import { insertDepartamento } from '../../services/departamentos';
 
 const FormDepartamento = () => {
 
   const [nome, setNome] = useState('');
   const [sigla, setSigla] = useState('');
   const [msg, setMsg] = useState('');
+  const [showLoader, setShowLoader] = useState(false);
+  const navigate = useNavigate();
 
   const validaForm = () => {
     if (nome === '') {
@@ -20,11 +25,27 @@ const FormDepartamento = () => {
     }
 
     setMsg('');
+
+    (async () => {
+      setShowLoader(true);
+      try {
+        const resp = await insertDepartamento();
+        // TODO: tratar a resposta
+
+        setShowLoader(false);
+        navigate('/departamentos');
+      } catch(e) {
+        console.error(e);
+        setShowLoader(false);
+      }
+    })()
+
     return true;
   }
 
   return (
     <Container>
+
       <h1>Cadastrar Departamento</h1>
       <input
         type='text'
@@ -45,7 +66,9 @@ const FormDepartamento = () => {
       <Button
         onClick={validaForm}
       >
-        ENVIAR
+       
+       {showLoader ? <Loader fullScreen={false}>Carregando...</Loader> : 'ENVIAR' }
+       
       </Button>
 
       <Mensagem>{msg}</Mensagem>
