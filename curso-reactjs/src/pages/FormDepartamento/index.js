@@ -29,7 +29,10 @@ const FormDepartamento = () => {
     (async () => {
       setShowLoader(true);
       try {
-        const resp = await insertDepartamento();
+        const resp = await insertDepartamento({
+          nome,
+          sigla
+        });
         // TODO: tratar a resposta
 
         setShowLoader(false);

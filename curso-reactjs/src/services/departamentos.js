@@ -10,8 +10,13 @@ export const getDepartamentos = async () => {
   return resp;
 }
 
-export const insertDepartamento = async () => {
-  const resp = await api.post('/departamentos/', { headers });
+export const insertDepartamento = async ({ nome, sigla }) => {
+  // neste cenário a API espera os dados como Form-Encoded
+  const body = new FormData();
+  body.append('nome', nome);
+  body.append('sigla', sigla);
+
+  const resp = await api.post('/departamentos/', body , { headers });
 
   return resp;
 }
