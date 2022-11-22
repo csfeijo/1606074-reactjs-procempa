@@ -33,7 +33,7 @@ const Departamentos = () => {
   
   return (
     <>
-      <h1>Departamentos</h1>
+      <h1>Listagem de Departamentos</h1>
       
       {showLoader &&
         <Loader/>

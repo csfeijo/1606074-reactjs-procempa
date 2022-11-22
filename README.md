@@ -49,6 +49,11 @@
 - Axios Mock Adapter
 - Tratamento e simulação de erros de API
 
+### Aula 07 (17/11/2022)
+- Correção dos exercícios
+- Implementação do insertDepartamentos na API
+- Build
+
 ## Links Uteis
 * [Repositório Turma Procempa 16062066](https://github.com/csfeijo/1606066-reactjs-procempa)
 * [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
@@ -69,3 +74,13 @@
 * [Vercel](https://vercel.com)
 * [NextJS](https://nextjs.org/)
 * [Vídeo NextJS Conf 2022](https://nextjs.org/conf)
+
+### Mock de API´s
+* [Mock API](https://mockapi.io/)
+
+## Auth em ReactJS
+https://blog.logrocket.com/implement-keycloak-authentication-react/
+https://github.com/react-keycloak/react-keycloak-examples/blob/master/examples/react-router/src/index.tsx
+https://www.bezkoder.com/react-jwt-auth/
+
+* [Keycloak Issue](https://github.com/react-keycloak/react-keycloak/issues/93#issuecomment-1108665029)
