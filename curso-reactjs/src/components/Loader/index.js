@@ -1,6 +1,6 @@
-import React from 'react';
-import imgLoader from '../../assets/img/loader.svg';
-import Container from './styles';
+import React from 'react'
+import imgLoader from '../../assets/img/loader.svg'
+import Container from './styles'
 
 const Loader = ({ children, fullScreen=true }) => {
   return (
@@ -11,4 +11,4 @@ const Loader = ({ children, fullScreen=true }) => {
   )
 }
 
-export default Loader;
+export default Loader

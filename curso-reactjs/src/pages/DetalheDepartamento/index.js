@@ -1,10 +1,10 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React from 'react'
+import { useParams } from 'react-router-dom'
 
 
 const DetalheDepartamento = () => {
 
-  const { idDepartamento } = useParams();  
+  const { idDepartamento } = useParams()  
 
   return (
     <>
@@ -16,4 +16,4 @@ const DetalheDepartamento = () => {
   )
 }
 
-export default DetalheDepartamento;
+export default DetalheDepartamento

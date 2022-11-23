@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 import { 
-  Nav, 
-  LinkNav 
-} from './styles';
+  LinkNav, 
+  Nav 
+} from './styles'
 
 const Menu = () => {
   return (

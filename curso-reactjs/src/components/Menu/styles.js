@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled, { css } from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
 
@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   h1 {
     margin-right: 60px;
   }
-`;
+`
 
 export const LinkNav = styled(Link)`
   color: ${({ theme }) => theme.colors.mainColor};
@@ -35,7 +35,7 @@ export const LinkNav = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
-`;
+`
 
 
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Titulo = ({ aula, turma, children }) => {
 
@@ -20,4 +20,4 @@ Titulo.defaultProps = {
   aula: 'N/A'
 }
 
-export default Titulo;
+export default Titulo

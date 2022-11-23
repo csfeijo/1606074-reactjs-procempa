@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 const Row = styled.div`
   background: ${({ theme }) => theme.colors.background};
@@ -17,6 +17,6 @@ const Row = styled.div`
       color: ${({ theme }) => theme.colors.background};
     }
   }
-`;
+`
 
-export default Row;
+export default Row

@@ -1,49 +1,49 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Button from '../../components/Button';
-import Loader from '../../components/Loader';
-import { Container, Mensagem } from './styles';
-import { insertDepartamento } from '../../services/departamentos';
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import Button from '../../components/Button'
+import Loader from '../../components/Loader'
+import { Container, Mensagem } from './styles'
+import { insertDepartamento } from '../../services/departamentos'
 
 const FormDepartamento = () => {
 
-  const [nome, setNome] = useState('');
-  const [sigla, setSigla] = useState('');
-  const [msg, setMsg] = useState('');
-  const [showLoader, setShowLoader] = useState(false);
-  const navigate = useNavigate();
+  const [nome, setNome] = useState('')
+  const [sigla, setSigla] = useState('')
+  const [msg, setMsg] = useState('')
+  const [showLoader, setShowLoader] = useState(false)
+  const navigate = useNavigate()
 
   const validaForm = () => {
     if (nome === '') {
-      setMsg('Preencha o nome');
-      return false;
+      setMsg('Preencha o nome')
+      return false
     }
 
     if (sigla === '') {
-      setMsg('Preencha a sigla');
-      return false;
+      setMsg('Preencha a sigla')
+      return false
     }
 
     setMsg('');
 
     (async () => {
-      setShowLoader(true);
+      setShowLoader(true)
       try {
         const resp = await insertDepartamento({
           nome,
           sigla
-        });
+        })
         // TODO: tratar a resposta
 
-        setShowLoader(false);
-        navigate('/departamentos');
+        setShowLoader(false)
+        navigate('/departamentos')
       } catch(e) {
-        console.error(e);
-        setShowLoader(false);
+        console.error(e)
+        setShowLoader(false)
       }
     })()
 
-    return true;
+    return true
   }
 
   return (
@@ -70,7 +70,7 @@ const FormDepartamento = () => {
         onClick={validaForm}
       >
        
-       {showLoader ? <Loader fullScreen={false}>Carregando...</Loader> : 'ENVIAR' }
+        {showLoader ? <Loader fullScreen={false}>Carregando...</Loader> : 'ENVIAR' }
        
       </Button>
 
@@ -79,4 +79,4 @@ const FormDepartamento = () => {
   )
 }
 
-export default FormDepartamento;
+export default FormDepartamento

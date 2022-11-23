@@ -54,6 +54,14 @@
 - Implementação do insertDepartamentos na API
 - Build
 
+### Aula 08 (22/11/2022)
+- Deploy automatizado usando a Vercel
+- ESLint
+- React Prop-types
+
+## Nossa APP na Vercel
+* [URL da nossa APP na Vercel](https://1606074-reactjs-procempa.vercel.app/)
+
 ## Links Uteis
 * [Repositório Turma Procempa 16062066](https://github.com/csfeijo/1606066-reactjs-procempa)
 * [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
@@ -79,8 +87,7 @@
 * [Mock API](https://mockapi.io/)
 
 ## Auth em ReactJS
-https://blog.logrocket.com/implement-keycloak-authentication-react/
-https://github.com/react-keycloak/react-keycloak-examples/blob/master/examples/react-router/src/index.tsx
-https://www.bezkoder.com/react-jwt-auth/
-
+* [Implementando autenticação usando o Keycloak](https://blog.logrocket.com/implement-keycloak-authentication-react/)
+* [Exemplos utilizando o Keycloak](https://github.com/react-keycloak/react-keycloak-examples/blob/master/examples/react-router/src/index.tsx)
+* [Autenticação utilizando JWT](https://www.bezkoder.com/react-jwt-auth/)
 * [Keycloak Issue](https://github.com/react-keycloak/react-keycloak/issues/93#issuecomment-1108665029)

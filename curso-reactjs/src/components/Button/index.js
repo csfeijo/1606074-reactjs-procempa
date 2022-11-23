@@ -1,5 +1,6 @@
-import React from 'react';
-import Container from './styles';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Container from './styles'
 
 const Button = ({ children, onClick, variant }) => {
 
@@ -11,7 +12,14 @@ const Button = ({ children, onClick, variant }) => {
       {children}
     </Container>
   )
-
 }
 
-export default Button;
+Button.propTypes = {
+  variant: PropTypes.string,
+  onClick: PropTypes.func,
+  children: PropTypes.node.isRequired
+}
+
+
+
+export default Button
