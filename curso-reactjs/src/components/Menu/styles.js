@@ -2,11 +2,6 @@ import styled, { css } from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const Nav = styled.nav`
-
-  background: ${({ theme }) => theme.colors.background};
-
-  color: ${({ theme }) => theme.colors.mainColor};
-
   display: flex;
   align-items: stretch;
   padding: 10px;
@@ -25,8 +20,8 @@ export const LinkNav = styled(Link)`
   text-decoration: none;
   border-right: 1px dashed white;
 
-  ${props => 
-    props.active && 
+  ${props =>
+    props.active &&
     css`
       background: black;
       color: #E89900;
@@ -37,6 +32,19 @@ export const LinkNav = styled(Link)`
   }
 `
 
+export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  background: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.mainColor};
+`
 
+export const UserContainer = styled.div`
+  font-family: Arial;
+  justify-self: end;
+  align-self: center;
+  padding-right: 20px;
+  text-align: right;
+`
 
 
