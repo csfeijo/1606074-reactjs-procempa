@@ -7,12 +7,12 @@ const DetalheDepartamento = () => {
   const { idDepartamento } = useParams()  
 
   return (
-    <>
-      <h1>Detalhes do Departamento</h1>
+    <div className='container'>
+      <h2>Detalhes do Departamento</h2>
       <ul>
         <li>ID: {idDepartamento}</li>
       </ul>
-    </>
+    </div>
   )
 }
 

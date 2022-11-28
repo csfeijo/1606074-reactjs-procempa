@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/scss/main.scss'
 import { ThemeProvider } from 'styled-components'
 import { dark, light } from './Theme'

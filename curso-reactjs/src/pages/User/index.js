@@ -7,8 +7,8 @@ const User = () => {
   const { user, setUser } = useContext(UserContext)
 
   return (
-    <Container>
-      <h1>Usuário</h1>
+    <Container className='container'>
+      <h2 className='mb-3'>Usuário</h2>
 
       <input
         type='text'

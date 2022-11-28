@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
+import Nav from 'react-bootstrap/Nav'
 import UserContext from '../../context/UserContext'
 import {
   Container,
   LinkNav,
-  Nav,
+  //Nav,
   UserContainer
 } from './styles'
 
@@ -17,22 +18,26 @@ const Menu = () => {
         <LinkNav
           to="/"
         >
-          <h1>Curso de ReactJS</h1>
+          <Nav.Link>Curso de ReactJS</Nav.Link>
         </LinkNav>
 
         <LinkNav
           to="/departamentos"
         >
-          Departamentos
+          <Nav.Link>Departamentos</Nav.Link>
         </LinkNav>
 
-        <LinkNav to="/departamentos/new">Add Departamentos</LinkNav>
+        <LinkNav to="/departamentos/new">
+          <Nav.Link>Add Departamentos</Nav.Link>
+        </LinkNav>
 
-        <LinkNav to="/user">Usuário</LinkNav>
+        <LinkNav to="/user">
+          <Nav.Link>Usuário</Nav.Link>
+        </LinkNav>
       </Nav>
-      <UserContainer>
-        <p>{user}</p>
-        <p>{dtCriacao}</p>
+      <UserContainer className='align-center'>
+        <div className='mt-3 mb-2'>{user}</div>
+        <div className='mt-3 mb-2'>{dtCriacao}</div>
       </UserContainer>
     </Container>
   )

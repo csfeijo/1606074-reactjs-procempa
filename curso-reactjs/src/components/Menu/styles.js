@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { Link } from 'react-router-dom'
+import { LinkContainer } from 'react-router-bootstrap'
 
 export const Nav = styled.nav`
   display: flex;
@@ -11,7 +12,7 @@ export const Nav = styled.nav`
   }
 `
 
-export const LinkNav = styled(Link)`
+export const LinkNav = styled(LinkContainer)`
   color: ${({ theme }) => theme.colors.mainColor};
   font-size: 20px;
   padding: 0 40px;
@@ -27,8 +28,11 @@ export const LinkNav = styled(Link)`
       color: #E89900;
   `}
 
-  &:hover {
-    text-decoration: underline;
+  &:hover,
+  &:active,
+  &:focus {
+    color: ${({ theme }) => theme.colors.mainColor};
+    box-shadow: inset 0px -5px 0px 0px ${({ theme }) => theme.colors.secondaryColor};
   }
 `
 

@@ -47,9 +47,9 @@ const FormDepartamento = () => {
   }
 
   return (
-    <Container>
+    <Container className='container'>
 
-      <h1>Cadastrar Departamento</h1>
+      <h2 className='mb-3'>Cadastrar Departamento</h2>
       <input
         type='text'
         placeholder='Nome'
