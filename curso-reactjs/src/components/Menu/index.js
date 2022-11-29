@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import UserContext from '../../context/UserContext'
 import { 
   LinkNav, 
   Nav 
 } from './styles'
 
 const Menu = () => {
+
+  const { user } = useContext(UserContext)
+
   return (
     <Nav>
       <LinkNav 
@@ -21,6 +25,7 @@ const Menu = () => {
 
       <LinkNav to="/departamentos/new">Add Departamentos</LinkNav>
 
+      <p>{user}</p>
     </Nav>
   )
 }
