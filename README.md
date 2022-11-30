@@ -59,6 +59,10 @@
 - ESLint
 - React Prop-types
 
+### Aula 09 (29/11/2022)
+- Context API
+- Correção de exercício
+
 ## Nossa APP na Vercel
 * [URL da nossa APP na Vercel](https://1606074-reactjs-procempa.vercel.app/)
 
@@ -91,3 +95,9 @@
 * [Exemplos utilizando o Keycloak](https://github.com/react-keycloak/react-keycloak-examples/blob/master/examples/react-router/src/index.tsx)
 * [Autenticação utilizando JWT](https://www.bezkoder.com/react-jwt-auth/)
 * [Keycloak Issue](https://github.com/react-keycloak/react-keycloak/issues/93#issuecomment-1108665029)
+
+
+## Gerenciamento global de dados/estados
+* [DIferenças entre Context API e Redux](https://www.alura.com.br/artigos/estados-globais-diferencas-redux-context-api)
+* [Context API vs Redux: Managing Data Flow Through Nested Components in React](https://www.scalablepath.com/react/context-api-vs-redux)
+* [Redux ou Context: qual usar em aplicações modernas?](https://www.linkedin.com/pulse/redux-ou-context-qual-usar-em-aplica%C3%A7%C3%B5es-modernas-silvio-dayube/?originalSubdomain=pt)

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './assets/scss/main.scss'
 import UserContext from './context/UserContext'
 import { ThemeProvider } from 'styled-components'
@@ -13,14 +13,16 @@ import Home from './pages/Home'
 import Departamentos from './pages/Departamentos'
 import FormDepartamento from './pages/FormDepartamento'
 import DetalheDepartamento from './pages/DetalheDepartamento'
+import User from './pages/User'
 
 function App() {
 
   const [user, setUser] = useState('Feijó') 
+  const { lastLogin } = useContext(UserContext)
 
   return (
     <ThemeProvider theme={dark}>
-      <UserContext.Provider value={ { user, setUser } }>
+      <UserContext.Provider value={ { user, setUser, lastLogin } }>
         <BrowserRouter>
           <Menu />  
           <section>
@@ -34,6 +36,7 @@ function App() {
                   <Route path=':idDepartamento' element={<DetalheDepartamento/>} />
                 </Route>
 
+                <Route path='/user' element={<User/> } />
               </Route>
               {/* Idealmente fica fora do escopo do / - no final das regras */}
               <Route path='*' element={<h1>Not Found</h1>}/>

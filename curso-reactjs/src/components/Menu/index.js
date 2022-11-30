@@ -2,31 +2,40 @@ import React, { useContext } from 'react'
 import UserContext from '../../context/UserContext'
 import { 
   LinkNav, 
-  Nav 
+  Nav,
+  UserContainer
 } from './styles'
 
 const Menu = () => {
 
-  const { user } = useContext(UserContext)
+  const { user, lastLogin } = useContext(UserContext)
 
   return (
-    <Nav>
-      <LinkNav 
-        to="/"
-      >
-        <h1>Curso de ReactJS</h1>
-      </LinkNav>
+    <>
+      <Nav>
+        <LinkNav 
+          to="/"
+        >
+          <h1>Curso de ReactJS</h1>
+        </LinkNav>
 
-      <LinkNav
-        to="/departamentos"
-      >
+        <LinkNav
+          to="/departamentos"
+        >
         Departamentos
-      </LinkNav>
+        </LinkNav>
 
-      <LinkNav to="/departamentos/new">Add Departamentos</LinkNav>
+        <LinkNav to="/departamentos/new">Add Departamentos</LinkNav>
 
-      <p>{user}</p>
-    </Nav>
+        <LinkNav to="/user">Usuário</LinkNav>
+        
+        <UserContainer>
+          <p>{user}</p>
+          <p>{lastLogin}</p>
+        </UserContainer>
+      </Nav>
+      
+    </>
   )
 }
 

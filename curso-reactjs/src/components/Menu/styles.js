@@ -25,6 +25,7 @@ export const LinkNav = styled(Link)`
   text-decoration: none;
   border-right: 1px dashed white;
 
+
   ${props => 
     props.active && 
     css`
@@ -36,7 +37,9 @@ export const LinkNav = styled(Link)`
     text-decoration: underline;
   }
 `
-
-
-
-
+export const UserContainer = styled.div`
+  align-self: center;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+`
