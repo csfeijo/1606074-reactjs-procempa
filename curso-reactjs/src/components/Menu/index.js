@@ -1,4 +1,6 @@
 import React, { useContext } from 'react'
+import { useSelector } from 'react-redux'
+import { selectCounter } from '../../store/counter/counterSlice'
 import UserContext from '../../context/UserContext'
 import { 
   LinkNav, 
@@ -9,6 +11,7 @@ import {
 const Menu = () => {
 
   const { user, lastLogin } = useContext(UserContext)
+  const counter = useSelector(selectCounter)
 
   return (
     <>
@@ -32,6 +35,7 @@ const Menu = () => {
         <UserContainer>
           <p>{user}</p>
           <p>{lastLogin}</p>
+          <p>Counter: {counter}</p>
         </UserContainer>
       </Nav>
       

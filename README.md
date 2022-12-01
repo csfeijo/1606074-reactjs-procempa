@@ -63,6 +63,13 @@
 - Context API
 - Correção de exercício
 
+### Aula 10 (01/12/2022)
+- Redux Toolkit
+- Exercício
+- Context API VS Redux
+- Extra: React Bootstrap (acessem o branch react-bootstrap para visualizar)
+- Considerações finais
+
 ## Nossa APP na Vercel
 * [URL da nossa APP na Vercel](https://1606074-reactjs-procempa.vercel.app/)
 
@@ -98,6 +105,8 @@
 
 
 ## Gerenciamento global de dados/estados
+* [Redux Devtools Kit](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
 * [DIferenças entre Context API e Redux](https://www.alura.com.br/artigos/estados-globais-diferencas-redux-context-api)
 * [Context API vs Redux: Managing Data Flow Through Nested Components in React](https://www.scalablepath.com/react/context-api-vs-redux)
 * [Redux ou Context: qual usar em aplicações modernas?](https://www.linkedin.com/pulse/redux-ou-context-qual-usar-em-aplica%C3%A7%C3%B5es-modernas-silvio-dayube/?originalSubdomain=pt)
+* [Redux Saga: Você no controle das operações assíncronas](https://medium.com/nossa-coletividad/redux-saga-voc%C3%AA-no-controle-das-opera%C3%A7%C3%B5es-ass%C3%ADncronas-71c9e6b3aabc#:~:text=redux%2Dsaga%20%C3%A9%20uma%20biblioteca,de%20se%20criar%20e%20manter.)
