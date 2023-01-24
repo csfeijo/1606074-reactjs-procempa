@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <>
-      <h1>Home</h1>
+      <h1>Home atualizado na aula de NodeJS</h1>
       <p>Você está logado como: {user}</p>
       <p>Contador: {counter}</p>
       <Button
